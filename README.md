@@ -1,9 +1,6 @@
 # E-Yantra
 Official repository of my Team 'MazeSolver Bot' project for the e-Yantra Robotics Competition (eYRC) 2025-26.
 # e-Yantra Robotics Competition 2025-26: MazeSolver Bot
-
-![e-Yantra Logo](https://www.e-yantra.org/img/e-yantra-logo.svg)
-
 ---
 
 ### **Team ID:** `eYRC#4683`
