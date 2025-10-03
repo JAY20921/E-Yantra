@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at pwm_generator.v(27): always construct contains both blocking and non-blocking assignments File: C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code/pwm_generator.v Line: 27

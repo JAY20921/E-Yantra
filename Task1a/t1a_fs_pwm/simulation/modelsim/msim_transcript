@@ -1,0 +1,185 @@
+# Reading pref.tcl
+# do t1a_fs_pwm_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying D:/Intel/modelsim_ase/win32aloem/modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code {C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code/t1a_fs_pwm_bdf.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:51:29 on Oct 03,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code" C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code/t1a_fs_pwm_bdf.v 
+# -- Compiling module t1a_fs_pwm_bdf
+# 
+# Top level modules:
+# 	t1a_fs_pwm_bdf
+# End time: 12:51:29 on Oct 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code {C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code/pwm_generator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:51:29 on Oct 03,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code" C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code/pwm_generator.v 
+# -- Compiling module pwm_generator
+# 
+# Top level modules:
+# 	pwm_generator
+# End time: 12:51:29 on Oct 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code {C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code/frequency_scaling.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:51:29 on Oct 03,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code" C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/code/frequency_scaling.v 
+# -- Compiling module frequency_scaling
+# 
+# Top level modules:
+# 	frequency_scaling
+# End time: 12:51:30 on Oct 03,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/.test {C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/.test/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:51:30 on Oct 03,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/.test" C:/Users/acer/Desktop/EYantra/t1a_fs_pwm/.test/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 12:51:30 on Oct 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 12:51:30 on Oct 03,2025
+# Loading work.tb
+# Loading work.t1a_fs_pwm_bdf
+# Loading work.frequency_scaling
+# Loading work.pwm_generator
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 us
+# No errors encountered, congratulations!
+force -freeze sim:/tb/clk_50M 1 0, 0 {5 ps} -r 10
+add wave -position insertpoint  \
+sim:/tb/clk_50M \
+sim:/tb/clk_3125KHz \
+sim:/tb/exp_clk_out_1 \
+sim:/tb/error_clk_1 \
+sim:/tb/clk_195KHz \
+sim:/tb/exp_clk_out_2 \
+sim:/tb/error_clk_2 \
+sim:/tb/duty_cycle \
+sim:/tb/pwm_signal \
+sim:/tb/exp_pwm_out \
+sim:/tb/error_pwm \
+sim:/tb/error_count \
+sim:/tb/i \
+sim:/tb/fw
+force -freeze sim:/tb/clk_50M 1 0, 0 {5 ps} -r 10
+add watch \
+sim:/tb/duty_cycle 
+force -freeze sim:/tb/duty_cycle 1111 0, 0000 {50 ps} -r 100
+run
+run -continue
+run
+run
+run
+run
+# Break key hit
+force -freeze {sim:/tb/duty_cycle[3]} 0 0
+force -freeze sim:/tb/duty_cycle 1000 0
+force -freeze sim:/tb/clk_50M 1 0, 0 {2 ps} -r 5
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze {sim:/tb/duty_cycle[0]} 1 0
+run
+force -freeze {sim:/tb/duty_cycle[0]} 1 0
+run
+run
+run
+force -freeze sim:/tb/duty_cycle 1111 0
+# Break key hit
+run -all
+force -freeze sim:/tb/duty_cycle 1110 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+force -freeze sim:/tb/duty_cycle 0100 0
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 12:59:10 on Oct 03,2025, Elapsed time: 0:07:40
+# Errors: 0, Warnings: 0

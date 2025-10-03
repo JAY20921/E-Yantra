@@ -1,0 +1,79 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/acer/Desktop/EYantra/t1a_fs_pwm/simulation/qsim
+vhard_block
+Z1 !s110 1759472364
+!i10b 1
+!s100 dZ1h[C0=GWHPRgPz]4SdK0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IS`K61]hV06AXEdB_V<7cj3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1759472363
+Z5 8t1a_fs_pwm.vo
+Z6 Ft1a_fs_pwm.vo
+!i122 6
+L0 636 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1759472364.000000
+Z9 !s107 t1a_fs_pwm.vo|
+Z10 !s90 -work|work|t1a_fs_pwm.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vt1a_fs_pwm_bdf
+R1
+!i10b 1
+!s100 [;kmcK>RWB2U:3_M1ZCb43
+R2
+IO4J]JzN[7Q<@DaPhRQ3P23
+R3
+R0
+R4
+R5
+R6
+!i122 6
+L0 32 603
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vt1a_fs_pwm_bdf_vlg_vec_tst
+R1
+!i10b 1
+!s100 MGHfk>Dko=aN=_@9CA_ZP0
+R2
+Imn?hkDWK>0<cZ]XCSVhKB0
+R3
+R0
+w1759472362
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 7
+L0 30 63
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
