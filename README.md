@@ -39,5 +39,4 @@ This repository is organized into tasks as laid out by the competition:
 -   `docs/`: Includes datasheets, problem statements, and other documentation.
 -   `sim/`: Holds simulation files and testbenches.
 
-## Current Status
-We are currently working on **Task 1A: Frequency Scaling & PWM Generation**.
+
