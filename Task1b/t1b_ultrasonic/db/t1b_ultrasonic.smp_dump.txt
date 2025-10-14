@@ -1,0 +1,8 @@
+
+State Machine - |t1b_ultrasonic|state
+Name state.OBJECT_DETERMINATION state.MONITOR state.TRIG_PHASE state.DELAY state.FINISHED 
+state.DELAY 0 0 0 0 0 
+state.TRIG_PHASE 0 0 1 1 0 
+state.MONITOR 0 1 0 1 0 
+state.OBJECT_DETERMINATION 1 0 0 1 0 
+state.FINISHED 0 0 0 1 1 

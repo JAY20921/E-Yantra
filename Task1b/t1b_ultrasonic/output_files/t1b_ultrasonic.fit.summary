@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Oct 13 20:11:31 2025
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : t1b_ultrasonic
+Top-level Entity Name : t1b_ultrasonic
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 594 / 22,320 ( 3 % )
+    Total combinational functions : 594 / 22,320 ( 3 % )
+    Dedicated logic registers : 60 / 22,320 ( < 1 % )
+Total registers : 60
+Total pins : 21 / 154 ( 14 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

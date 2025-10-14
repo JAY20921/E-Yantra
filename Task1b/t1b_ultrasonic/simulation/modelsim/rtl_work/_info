@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/simulation/modelsim
+vt1b_ultrasonic
+Z1 !s110 1760366525
+!i10b 1
+!s100 PXGm>nzInk]j^c64YmA6A1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ILhFMohMZb`1bOjJ2LhCFW2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1760366452
+8C:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/code/t1b_ultrasonic.v
+FC:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/code/t1b_ultrasonic.v
+!i122 0
+L0 25 141
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1760366525.000000
+!s107 C:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/code/t1b_ultrasonic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/code|C:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/code/t1b_ultrasonic.v|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/code
+Z7 tCvgOpt 0
+vtb
+R1
+!i10b 1
+!s100 `_@m:22D[NnQMAjD53AGd2
+R2
+I0BdkGY4MHPe>K<;^mB^;`2
+R3
+R0
+w1760286453
+8C:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/.test/tb.v
+FC:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/.test/tb.v
+!i122 1
+L0 4 115
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/.test/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/.test|C:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/.test/tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/DELL/Downloads/mb_4683_task1b/t1b_ultrasonic/.test
+R7

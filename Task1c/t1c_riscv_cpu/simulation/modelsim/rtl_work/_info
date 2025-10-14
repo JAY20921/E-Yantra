@@ -1,0 +1,395 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/simulation/modelsim
+vadder
+Z1 !s110 1760439867
+!i10b 1
+!s100 jXE67fZjiCj2W4l?`i:H?0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IoL??[DiOO;[`3I3?Wf<Jn0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1760436934
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/adder.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/adder.v
+!i122 13
+L0 4 8
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1760439867.000000
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/adder.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components
+Z9 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 @^ln@i_]5GbAd7jAlI=eG2
+R2
+IocTVUVE8<HdR^P7=27H2:3
+R3
+R0
+w1760439402
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/alu.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/alu.v
+!i122 12
+L0 1 38
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/alu.v|
+!i113 1
+R7
+R8
+R9
+valu_decoder
+Z10 !s110 1760439866
+!i10b 1
+!s100 oOCPl?GFGhj8]4dPI=ZQ>3
+R2
+IDQe3NVj3DSA=<Ui`UPnX?1
+R3
+R0
+w1760439400
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/alu_decoder.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/alu_decoder.v
+!i122 11
+L0 1 39
+R5
+r1
+!s85 0
+31
+Z11 !s108 1760439866.000000
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/alu_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/alu_decoder.v|
+!i113 1
+R7
+R8
+R9
+vcontroller
+R10
+!i10b 1
+!s100 m^WOmO^L3OTm7e=FnX8T13
+R2
+I`z=:Q2[U[SmDj5EOPa[T53
+R3
+R0
+w1760439401
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/controller.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/controller.v
+!i122 10
+L0 4 25
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/controller.v|
+!i113 1
+R7
+R8
+R9
+vdata_mem
+Z12 !s110 1760439864
+!i10b 1
+!s100 X1Bn4^Y_k6O0<i]TS2SN@3
+R2
+IX6hiFSS:45?o]eUYcOgOh1
+R3
+R0
+R4
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/data_mem.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/data_mem.v
+!i122 2
+L0 2 87
+R5
+r1
+!s85 0
+31
+Z13 !s108 1760439864.000000
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/data_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/data_mem.v|
+!i113 1
+R7
+Z14 !s92 -vlog01compat -work work +incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code
+R9
+vdatapath
+R10
+!i10b 1
+!s100 :]_42Oghonl@D[b6JO[=D0
+R2
+IC[39HmAn45TfKG_fBZ0KN1
+R3
+R0
+w1760439813
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/datapath.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/datapath.v
+!i122 9
+L0 2 63
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/datapath.v|
+!i113 1
+R7
+R8
+R9
+vimm_extend
+R10
+!i10b 1
+!s100 KCY0HN8a_SDDT@o^3341e2
+R2
+IUiX3OAi1937oiDdFk^j?80
+R3
+R0
+R4
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/imm_extend.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/imm_extend.v
+!i122 8
+L0 3 21
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/imm_extend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/imm_extend.v|
+!i113 1
+R7
+R8
+R9
+vinstr_mem
+R1
+!i10b 1
+!s100 _2]cbk6YNQ9ECcKm2oV;A0
+R2
+I;gWKcMd7VY@@H;j?j[k^^1
+R3
+R0
+R4
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/instr_mem.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/instr_mem.v
+!i122 14
+L0 4 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/instr_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/instr_mem.v|
+!i113 1
+R7
+R14
+R9
+vmain_decoder
+R10
+!i10b 1
+!s100 7ozW?InH[f0NF6:Akb=_d2
+R2
+IXoM^QXUEo5K2HaG[D]ahT2
+R3
+R0
+R4
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/main_decoder.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/main_decoder.v
+!i122 7
+L0 2 45
+R5
+r1
+!s85 0
+31
+Z15 !s108 1760439865.000000
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/main_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/main_decoder.v|
+!i113 1
+R7
+R8
+R9
+vmux2
+Z16 !s110 1760439865
+!i10b 1
+!s100 O<Ld`3jD6QL?6PIEe_QAk1
+R2
+I0YPgKXFK`3b`4^8XN6S;b0
+R3
+R0
+R4
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/mux2.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/mux2.v
+!i122 6
+Z17 L0 4 9
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/mux2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/mux2.v|
+!i113 1
+R7
+R8
+R9
+vmux4
+R16
+!i10b 1
+!s100 V4YdM>hK^I8CMb?cH8Cej3
+R2
+I;0OFjYeO;aX7geliMXM?D3
+R3
+R0
+R4
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/mux4.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/mux4.v
+!i122 5
+R17
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/mux4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/mux4.v|
+!i113 1
+R7
+R8
+R9
+vreg_file
+R16
+!i10b 1
+!s100 z2]InGk0[gjzdlc7_WWYI1
+R2
+I28[F_T?9EU2GEBfPXZOjU2
+R3
+R0
+R4
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/reg_file.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/reg_file.v
+!i122 4
+L0 8 27
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/reg_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/reg_file.v|
+!i113 1
+R7
+R8
+R9
+vreset_ff
+R12
+!i10b 1
+!s100 c1I5T0L8]]ZK0dn2hg0_F0
+R2
+I5izAX0ZiT^LnllXlK6GNM0
+R3
+R0
+R4
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/reset_ff.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/reset_ff.v
+!i122 3
+L0 4 12
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/reset_ff.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/components/reset_ff.v|
+!i113 1
+R7
+R8
+R9
+vriscv_cpu
+R12
+!i10b 1
+!s100 Ed8LM6za0eXzA1ANebB9`2
+R2
+I_SooJ;d^n1Q<Rb^W845`?2
+R3
+R0
+w1760439812
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/riscv_cpu.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/riscv_cpu.v
+!i122 1
+L0 4 23
+R5
+r1
+!s85 0
+31
+Z18 !s108 1760439863.000000
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/riscv_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/riscv_cpu.v|
+!i113 1
+R7
+R14
+R9
+vt1c_riscv_cpu
+!s110 1760439863
+!i10b 1
+!s100 Z<7X@2dA36hEcVAK9@ACH1
+R2
+ILLZaIEaJl`gIQS@bPe`6B1
+R3
+R0
+R4
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/t1c_riscv_cpu.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/t1c_riscv_cpu.v
+!i122 0
+L0 13 25
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/t1c_riscv_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/code/t1c_riscv_cpu.v|
+!i113 1
+R7
+R14
+R9
+vtb
+R1
+!i10b 1
+!s100 3lMj:0B^XkCNJJiBLB9Bo0
+R2
+IBb31Id<`BXH1?PWJJRNe:3
+R3
+R0
+R4
+8C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/.test/tb.v
+FC:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/.test/tb.v
+!i122 15
+L0 3 532
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/.test/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/.test|C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/.test/tb.v|
+!i113 1
+R7
+!s92 -vlog01compat -work work +incdir+C:/Users/Vishnu/Downloads/mb_4683_task1c/mb_4683_task1c/t1c_riscv_cpu/.test
+R9
