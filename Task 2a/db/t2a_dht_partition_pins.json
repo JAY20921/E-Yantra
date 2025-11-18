@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "T_integral[0]",
+					"strict" : false
+				},
+				{
+					"name" : "T_integral[1]",
+					"strict" : false
+				},
+				{
+					"name" : "T_integral[2]",
+					"strict" : false
+				},
+				{
+					"name" : "T_integral[3]",
+					"strict" : false
+				},
+				{
+					"name" : "T_integral[4]",
+					"strict" : false
+				},
+				{
+					"name" : "T_integral[5]",
+					"strict" : false
+				},
+				{
+					"name" : "T_integral[6]",
+					"strict" : false
+				},
+				{
+					"name" : "T_integral[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_integral[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_integral[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_integral[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_integral[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_integral[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_integral[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_integral[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_integral[7]",
+					"strict" : false
+				},
+				{
+					"name" : "T_decimal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "T_decimal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "T_decimal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "T_decimal[3]",
+					"strict" : false
+				},
+				{
+					"name" : "T_decimal[4]",
+					"strict" : false
+				},
+				{
+					"name" : "T_decimal[5]",
+					"strict" : false
+				},
+				{
+					"name" : "T_decimal[6]",
+					"strict" : false
+				},
+				{
+					"name" : "T_decimal[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_decimal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_decimal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_decimal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_decimal[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_decimal[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_decimal[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_decimal[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RH_decimal[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Checksum[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Checksum[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Checksum[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Checksum[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Checksum[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Checksum[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Checksum[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Checksum[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_valid",
+					"strict" : false
+				},
+				{
+					"name" : "sensor",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50M",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

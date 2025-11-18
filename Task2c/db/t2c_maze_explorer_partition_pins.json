@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "move[0]",
+					"strict" : false
+				},
+				{
+					"name" : "move[1]",
+					"strict" : false
+				},
+				{
+					"name" : "move[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mid",
+					"strict" : false
+				},
+				{
+					"name" : "right",
+					"strict" : false
+				},
+				{
+					"name" : "left",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

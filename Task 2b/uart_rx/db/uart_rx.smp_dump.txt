@@ -1,0 +1,8 @@
+
+State Machine - |uart_rx|current_state
+Name current_state.PARITY_BIT current_state.DATA_BITS current_state.START_BIT current_state.IDLE current_state.STOP_BIT 
+current_state.IDLE 0 0 0 0 0 
+current_state.START_BIT 0 0 1 1 0 
+current_state.DATA_BITS 0 1 0 1 0 
+current_state.PARITY_BIT 1 0 0 1 0 
+current_state.STOP_BIT 0 0 0 1 1 

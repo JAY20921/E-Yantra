@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Nov 10 21:33:56 2025
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : uart_tx
+Top-level Entity Name : uart_tx
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 46 / 22,320 ( < 1 % )
+    Total combinational functions : 43 / 22,320 ( < 1 % )
+    Dedicated logic registers : 24 / 22,320 ( < 1 % )
+Total registers : 24
+Total pins : 13 / 154 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

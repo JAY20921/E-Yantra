@@ -1,0 +1,5 @@
+
+State Machine - |t2c_maze_explorer|state
+Name state.DECIDE 
+state.SENSE 0 
+state.DECIDE 1 

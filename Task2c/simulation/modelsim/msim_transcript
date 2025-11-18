@@ -1,0 +1,293 @@
+# Reading pref.tcl
+# do t2c_maze_explorer_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying D:/Intel/modelsim_ase/win32aloem/modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/E-Yantra/mb_4683_task2c/t2c_maze_explorer/code {D:/E-Yantra/mb_4683_task2c/t2c_maze_explorer/code/t2c_maze_explorer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:11:09 on Nov 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/E-Yantra/mb_4683_task2c/t2c_maze_explorer/code" D:/E-Yantra/mb_4683_task2c/t2c_maze_explorer/code/t2c_maze_explorer.v 
+# -- Compiling module t2c_maze_explorer
+# 
+# Top level modules:
+# 	t2c_maze_explorer
+# End time: 16:11:09 on Nov 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/E-Yantra/mb_4683_task2c/t2c_maze_explorer/.test {D:/E-Yantra/mb_4683_task2c/t2c_maze_explorer/.test/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:11:09 on Nov 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/E-Yantra/mb_4683_task2c/t2c_maze_explorer/.test" D:/E-Yantra/mb_4683_task2c/t2c_maze_explorer/.test/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 16:11:09 on Nov 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 16:11:09 on Nov 18,2025
+# Loading work.tb
+# Loading work.t2c_maze_explorer
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Dead ends at positions:
+# 0 5 11 19 34 45 48 64 80 
+# 
+# Step 0: Pos=[4, 8] Facing=N Walls=101 Move=001
+# Step 1: Pos=[4, 7] Facing=N Walls=011 Move=010
+# Step 2: Pos=[3, 7] Facing=W Walls=011 Move=010
+# Step 3: Pos=[3, 8] Facing=S Walls=110 Move=011
+# Step 4: Pos=[2, 8] Facing=W Walls=101 Move=001
+# Step 5: Pos=[1, 8] Facing=W Walls=101 Move=001
+# Step 6: Pos=[0, 8] Facing=W Walls=110 Move=011
+# Step 7: Pos=[0, 7] Facing=N Walls=101 Move=001
+# Step 8: Pos=[0, 6] Facing=N Walls=110 Move=011
+# Step 9: Pos=[1, 6] Facing=E Walls=011 Move=010
+# Step 10: Pos=[1, 5] Facing=N Walls=001 Move=001
+# Step 11: Pos=[1, 4] Facing=N Walls=010 Move=010
+# Step 12: Pos=[0, 4] Facing=W Walls=110 Move=011
+# Step 13: Pos=[0, 3] Facing=N Walls=110 Move=011
+# Step 14: Pos=[1, 3] Facing=E Walls=101 Move=001
+# Step 15: Pos=[2, 3] Facing=E Walls=011 Move=010
+# Step 16: Pos=[2, 2] Facing=N Walls=110 Move=011
+# Step 17: Pos=[3, 2] Facing=E Walls=011 Move=010
+# Step 18: Pos=[3, 1] Facing=N Walls=101 Move=001
+# Step 19: Pos=[3, 0] Facing=N Walls=011 Move=010
+# Step 20: Pos=[2, 0] Facing=W Walls=001 Move=010
+# Step 21: Pos=[2, 1] Facing=S Walls=111 Move=100
+# Step 22: Pos=[2, 0] Facing=N Walls=010 Move=010
+# Step 23: Pos=[1, 0] Facing=W Walls=001 Move=010
+# Step 24: Pos=[1, 1] Facing=S Walls=110 Move=011
+# Step 25: Pos=[0, 1] Facing=W Walls=011 Move=010
+# Step 26: Pos=[0, 2] Facing=S Walls=011 Move=010
+# Step 27: Pos=[1, 2] Facing=E Walls=111 Move=100
+# Step 28: Pos=[0, 2] Facing=W Walls=110 Move=011
+# Step 29: Pos=[0, 1] Facing=N Walls=110 Move=011
+# Step 30: Pos=[1, 1] Facing=E Walls=011 Move=010
+# Step 31: Pos=[1, 0] Facing=N Walls=010 Move=010
+# Step 32: Pos=[0, 0] Facing=W Walls=111 Move=100
+# Step 33: Pos=[1, 0] Facing=E Walls=100 Move=001
+# Step 34: Pos=[2, 0] Facing=E Walls=100 Move=001
+# Step 35: Pos=[3, 0] Facing=E Walls=110 Move=011
+# Step 36: Pos=[3, 1] Facing=S Walls=101 Move=001
+# Step 37: Pos=[3, 2] Facing=S Walls=110 Move=011
+# Step 38: Pos=[2, 2] Facing=W Walls=011 Move=010
+# Step 39: Pos=[2, 3] Facing=S Walls=110 Move=011
+# Step 40: Pos=[1, 3] Facing=W Walls=101 Move=001
+# Step 41: Pos=[0, 3] Facing=W Walls=011 Move=010
+# Step 42: Pos=[0, 4] Facing=S Walls=011 Move=010
+# Step 43: Pos=[1, 4] Facing=E Walls=100 Move=001
+# Step 44: Pos=[2, 4] Facing=E Walls=110 Move=011
+# Step 45: Pos=[2, 5] Facing=S Walls=101 Move=001
+# Step 46: Pos=[2, 6] Facing=S Walls=001 Move=010
+# Step 47: Pos=[3, 6] Facing=E Walls=001 Move=010
+# Step 48: Pos=[3, 5] Facing=N Walls=111 Move=100
+# Step 49: Pos=[3, 6] Facing=S Walls=010 Move=010
+# Step 50: Pos=[4, 6] Facing=E Walls=001 Move=010
+# Step 51: Pos=[4, 5] Facing=N Walls=101 Move=001
+# Step 52: Pos=[4, 4] Facing=N Walls=011 Move=010
+# Step 53: Pos=[3, 4] Facing=W Walls=110 Move=011
+# Step 54: Pos=[3, 3] Facing=N Walls=110 Move=011
+# Step 55: Pos=[4, 3] Facing=E Walls=101 Move=001
+# Step 56: Pos=[5, 3] Facing=E Walls=110 Move=011
+# Step 57: Pos=[5, 4] Facing=S Walls=101 Move=001
+# Step 58: Pos=[5, 5] Facing=S Walls=011 Move=010
+# Step 59: Pos=[6, 5] Facing=E Walls=101 Move=001
+# Step 60: Pos=[7, 5] Facing=E Walls=110 Move=011
+# Step 61: Pos=[7, 6] Facing=S Walls=011 Move=010
+# Step 62: Pos=[8, 6] Facing=E Walls=011 Move=010
+# Step 63: Pos=[8, 5] Facing=N Walls=101 Move=001
+# Step 64: Pos=[8, 4] Facing=N Walls=101 Move=001
+# Step 65: Pos=[8, 3] Facing=N Walls=101 Move=001
+# Step 66: Pos=[8, 2] Facing=N Walls=101 Move=001
+# Step 67: Pos=[8, 1] Facing=N Walls=001 Move=010
+# Step 68: Pos=[7, 1] Facing=W Walls=011 Move=010
+# Step 69: Pos=[7, 2] Facing=S Walls=110 Move=011
+# Step 70: Pos=[6, 2] Facing=W Walls=011 Move=010
+# Step 71: Pos=[6, 3] Facing=S Walls=101 Move=001
+# Step 72: Pos=[6, 4] Facing=S Walls=011 Move=010
+# Step 73: Pos=[7, 4] Facing=E Walls=011 Move=010
+# Step 74: Pos=[7, 3] Facing=N Walls=111 Move=100
+# Step 75: Pos=[7, 4] Facing=S Walls=110 Move=011
+# Step 76: Pos=[6, 4] Facing=W Walls=110 Move=011
+# Step 77: Pos=[6, 3] Facing=N Walls=101 Move=001
+# Step 78: Pos=[6, 2] Facing=N Walls=110 Move=011
+# Step 79: Pos=[7, 2] Facing=E Walls=011 Move=010
+# Step 80: Pos=[7, 1] Facing=N Walls=110 Move=011
+# Step 81: Pos=[8, 1] Facing=E Walls=010 Move=010
+# Step 82: Pos=[8, 0] Facing=N Walls=011 Move=010
+# Step 83: Pos=[7, 0] Facing=W Walls=101 Move=001
+# Step 84: Pos=[6, 0] Facing=W Walls=011 Move=010
+# Step 85: Pos=[6, 1] Facing=S Walls=110 Move=011
+# Step 86: Pos=[5, 1] Facing=W Walls=011 Move=010
+# Step 87: Pos=[5, 2] Facing=S Walls=110 Move=011
+# Step 88: Pos=[4, 2] Facing=W Walls=110 Move=011
+# Step 89: Pos=[4, 1] Facing=N Walls=101 Move=001
+# Step 90: Pos=[4, 0] Facing=N Walls=100 Move=011
+# Step 91: Pos=[5, 0] Facing=E Walls=111 Move=100
+# Step 92: Pos=[4, 0] Facing=W Walls=010 Move=010
+# Step 93: Pos=[4, 1] Facing=S Walls=101 Move=001
+# Step 94: Pos=[4, 2] Facing=S Walls=011 Move=010
+# Step 95: Pos=[5, 2] Facing=E Walls=011 Move=010
+# Step 96: Pos=[5, 1] Facing=N Walls=110 Move=011
+# Step 97: Pos=[6, 1] Facing=E Walls=011 Move=010
+# Step 98: Pos=[6, 0] Facing=N Walls=110 Move=011
+# Step 99: Pos=[7, 0] Facing=E Walls=101 Move=001
+# Step 100: Pos=[8, 0] Facing=E Walls=110 Move=011
+# Step 101: Pos=[8, 1] Facing=S Walls=100 Move=001
+# Step 102: Pos=[8, 2] Facing=S Walls=101 Move=001
+# Step 103: Pos=[8, 3] Facing=S Walls=101 Move=001
+# Step 104: Pos=[8, 4] Facing=S Walls=101 Move=001
+# Step 105: Pos=[8, 5] Facing=S Walls=101 Move=001
+# Step 106: Pos=[8, 6] Facing=S Walls=110 Move=011
+# Step 107: Pos=[7, 6] Facing=W Walls=110 Move=011
+# Step 108: Pos=[7, 5] Facing=N Walls=011 Move=010
+# Step 109: Pos=[6, 5] Facing=W Walls=101 Move=001
+# Step 110: Pos=[5, 5] Facing=W Walls=110 Move=011
+# Step 111: Pos=[5, 4] Facing=N Walls=101 Move=001
+# Step 112: Pos=[5, 3] Facing=N Walls=011 Move=010
+# Step 113: Pos=[4, 3] Facing=W Walls=101 Move=001
+# Step 114: Pos=[3, 3] Facing=W Walls=011 Move=010
+# Step 115: Pos=[3, 4] Facing=S Walls=011 Move=010
+# Step 116: Pos=[4, 4] Facing=E Walls=110 Move=011
+# Step 117: Pos=[4, 5] Facing=S Walls=101 Move=001
+# Step 118: Pos=[4, 6] Facing=S Walls=010 Move=010
+# Step 119: Pos=[5, 6] Facing=E Walls=101 Move=001
+# Step 120: Pos=[6, 6] Facing=E Walls=110 Move=011
+# Step 121: Pos=[6, 7] Facing=S Walls=110 Move=011
+# Step 122: Pos=[5, 7] Facing=W Walls=011 Move=010
+# Step 123: Pos=[5, 8] Facing=S Walls=011 Move=010
+# Step 124: Pos=[6, 8] Facing=E Walls=101 Move=001
+# Step 125: Pos=[7, 8] Facing=E Walls=011 Move=010
+# Step 126: Pos=[7, 7] Facing=N Walls=110 Move=011
+# Step 127: Pos=[8, 7] Facing=E Walls=110 Move=011
+# Step 128: Pos=[8, 8] Facing=S Walls=111 Move=100
+# Step 129: Pos=[8, 7] Facing=N Walls=011 Move=010
+# Step 130: Pos=[7, 7] Facing=W Walls=011 Move=010
+# Step 131: Pos=[7, 8] Facing=S Walls=110 Move=011
+# Step 132: Pos=[6, 8] Facing=W Walls=101 Move=001
+# Step 133: Pos=[5, 8] Facing=W Walls=110 Move=011
+# Step 134: Pos=[5, 7] Facing=N Walls=110 Move=011
+# Step 135: Pos=[6, 7] Facing=E Walls=011 Move=010
+# Step 136: Pos=[6, 6] Facing=N Walls=011 Move=010
+# Step 137: Pos=[5, 6] Facing=W Walls=101 Move=001
+# Step 138: Pos=[4, 6] Facing=W Walls=100 Move=001
+# Step 139: Pos=[3, 6] Facing=W Walls=100 Move=001
+# Step 140: Pos=[2, 6] Facing=W Walls=010 Move=010
+# Step 141: Pos=[2, 7] Facing=S Walls=110 Move=011
+# Step 142: Pos=[1, 7] Facing=W Walls=111 Move=100
+# Step 143: Pos=[2, 7] Facing=E Walls=011 Move=010
+# Step 144: Pos=[2, 6] Facing=N Walls=100 Move=001
+# Step 145: Pos=[2, 5] Facing=N Walls=101 Move=001
+# Step 146: Pos=[2, 4] Facing=N Walls=011 Move=010
+# Step 147: Pos=[1, 4] Facing=W Walls=001 Move=001
+# Step 148: Pos=[0, 4] Facing=W Walls=110 Move=011
+# Step 149: Pos=[0, 3] Facing=N Walls=110 Move=011
+# Step 150: Pos=[1, 3] Facing=E Walls=101 Move=001
+# Step 151: Pos=[2, 3] Facing=E Walls=011 Move=010
+# Step 152: Pos=[2, 2] Facing=N Walls=110 Move=011
+# Step 153: Pos=[3, 2] Facing=E Walls=011 Move=010
+# Step 154: Pos=[3, 1] Facing=N Walls=101 Move=001
+# Step 155: Pos=[3, 0] Facing=N Walls=011 Move=010
+# Step 156: Pos=[2, 0] Facing=W Walls=001 Move=010
+# Step 157: Pos=[2, 1] Facing=S Walls=111 Move=100
+# Step 158: Pos=[2, 0] Facing=N Walls=010 Move=010
+# Step 159: Pos=[1, 0] Facing=W Walls=001 Move=010
+# Step 160: Pos=[1, 1] Facing=S Walls=110 Move=011
+# Step 161: Pos=[0, 1] Facing=W Walls=011 Move=010
+# Step 162: Pos=[0, 2] Facing=S Walls=011 Move=010
+# Step 163: Pos=[1, 2] Facing=E Walls=111 Move=100
+# Step 164: Pos=[0, 2] Facing=W Walls=110 Move=011
+# Step 165: Pos=[0, 1] Facing=N Walls=110 Move=011
+# Step 166: Pos=[1, 1] Facing=E Walls=011 Move=010
+# Step 167: Pos=[1, 0] Facing=N Walls=010 Move=010
+# Step 168: Pos=[0, 0] Facing=W Walls=111 Move=100
+# Step 169: Pos=[1, 0] Facing=E Walls=100 Move=001
+# Step 170: Pos=[2, 0] Facing=E Walls=100 Move=001
+# Step 171: Pos=[3, 0] Facing=E Walls=110 Move=011
+# Step 172: Pos=[3, 1] Facing=S Walls=101 Move=001
+# Step 173: Pos=[3, 2] Facing=S Walls=110 Move=011
+# Step 174: Pos=[2, 2] Facing=W Walls=011 Move=010
+# Step 175: Pos=[2, 3] Facing=S Walls=110 Move=011
+# Step 176: Pos=[1, 3] Facing=W Walls=101 Move=001
+# Step 177: Pos=[0, 3] Facing=W Walls=011 Move=010
+# Step 178: Pos=[0, 4] Facing=S Walls=011 Move=010
+# Step 179: Pos=[1, 4] Facing=E Walls=100 Move=001
+# Step 180: Pos=[2, 4] Facing=E Walls=110 Move=011
+# Step 181: Pos=[2, 5] Facing=S Walls=101 Move=001
+# Step 182: Pos=[2, 6] Facing=S Walls=001 Move=010
+# Step 183: Pos=[3, 6] Facing=E Walls=001 Move=010
+# Step 184: Pos=[3, 5] Facing=N Walls=111 Move=100
+# Step 185: Pos=[3, 6] Facing=S Walls=010 Move=010
+# Step 186: Pos=[4, 6] Facing=E Walls=001 Move=010
+# Step 187: Pos=[4, 5] Facing=N Walls=101 Move=001
+# Step 188: Pos=[4, 4] Facing=N Walls=011 Move=010
+# Step 189: Pos=[3, 4] Facing=W Walls=110 Move=011
+# Step 190: Pos=[3, 3] Facing=N Walls=110 Move=011
+# Step 191: Pos=[4, 3] Facing=E Walls=101 Move=001
+# Step 192: Pos=[5, 3] Facing=E Walls=110 Move=011
+# Step 193: Pos=[5, 4] Facing=S Walls=101 Move=001
+# Step 194: Pos=[5, 5] Facing=S Walls=011 Move=010
+# Step 195: Pos=[6, 5] Facing=E Walls=101 Move=001
+# Step 196: Pos=[7, 5] Facing=E Walls=110 Move=011
+# Step 197: Pos=[7, 6] Facing=S Walls=011 Move=010
+# Step 198: Pos=[8, 6] Facing=E Walls=011 Move=010
+# Step 199: Pos=[8, 5] Facing=N Walls=101 Move=001
+# Step 200: Pos=[8, 4] Facing=N Walls=101 Move=001
+# Step 201: Pos=[8, 3] Facing=N Walls=101 Move=001
+# Step 202: Pos=[8, 2] Facing=N Walls=101 Move=001
+# Step 203: Pos=[8, 1] Facing=N Walls=001 Move=010
+# Step 204: Pos=[7, 1] Facing=W Walls=011 Move=010
+# Step 205: Pos=[7, 2] Facing=S Walls=110 Move=011
+# Step 206: Pos=[6, 2] Facing=W Walls=011 Move=010
+# Step 207: Pos=[6, 3] Facing=S Walls=101 Move=001
+# Step 208: Pos=[6, 4] Facing=S Walls=011 Move=010
+# Step 209: Pos=[7, 4] Facing=E Walls=011 Move=010
+# Step 210: Pos=[7, 3] Facing=N Walls=111 Move=100
+# Step 211: Pos=[7, 4] Facing=S Walls=110 Move=011
+# Step 212: Pos=[6, 4] Facing=W Walls=110 Move=011
+# Step 213: Pos=[6, 3] Facing=N Walls=101 Move=001
+# Step 214: Pos=[6, 2] Facing=N Walls=110 Move=011
+# Step 215: Pos=[7, 2] Facing=E Walls=011 Move=010
+# Step 216: Pos=[7, 1] Facing=N Walls=110 Move=011
+# Step 217: Pos=[8, 1] Facing=E Walls=010 Move=010
+# Step 218: Pos=[8, 0] Facing=N Walls=011 Move=010
+# Step 219: Pos=[7, 0] Facing=W Walls=101 Move=001
+# Step 220: Pos=[6, 0] Facing=W Walls=011 Move=010
+# Step 221: Pos=[6, 1] Facing=S Walls=110 Move=011
+# Step 222: Pos=[5, 1] Facing=W Walls=011 Move=010
+# Step 223: Pos=[5, 2] Facing=S Walls=110 Move=011
+# Step 224: Pos=[4, 2] Facing=W Walls=110 Move=011
+# Step 225: Pos=[4, 1] Facing=N Walls=101 Move=001
+# Step 226: Pos=[4, 0] Facing=N Walls=100 Move=001
+# Maze exited successfully!
+# steps taken: 226
+# Dead end visit bits:
+# Position 0
+# Position 5
+# Position 11
+# Position 19
+# Position 34
+# Position 48
+# Position 64
+# Position 80
+# Total dead ends visited: 8 out of 9
+# some dead ends not explored.
+# ** Note: $stop    : D:/E-Yantra/mb_4683_task2c/t2c_maze_explorer/.test/tb.v(219)
+#    Time: 4580 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at D:/E-Yantra/mb_4683_task2c/t2c_maze_explorer/.test/tb.v line 219
+# End time: 16:11:24 on Nov 18,2025, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0

@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/E-Yantra/mb_4683_task2a/t2a_dht/simulation/modelsim
+vt2a_dht
+Z1 !s110 1761769473
+!i10b 1
+!s100 `o31BICkBa1kH5kb<?oT12
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+If?;VZBfU?E88I`9U@GOl10
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1761769417
+8D:/E-Yantra/mb_4683_task2a/t2a_dht/code/t2a_dht.v
+FD:/E-Yantra/mb_4683_task2a/t2a_dht/code/t2a_dht.v
+!i122 0
+L0 12 185
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1761769473.000000
+!s107 D:/E-Yantra/mb_4683_task2a/t2a_dht/code/t2a_dht.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/E-Yantra/mb_4683_task2a/t2a_dht/code|D:/E-Yantra/mb_4683_task2a/t2a_dht/code/t2a_dht.v|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/E-Yantra/mb_4683_task2a/t2a_dht/code
+Z7 tCvgOpt 0
+vtb
+R1
+!i10b 1
+!s100 5fd9NaJ]SbaCWCm5@Z32]3
+R2
+IU3j4RKK4HBZ5cQAK8`6c21
+R3
+R0
+w1760007740
+8D:/E-Yantra/mb_4683_task2a/t2a_dht/.test/tb.v
+FD:/E-Yantra/mb_4683_task2a/t2a_dht/.test/tb.v
+!i122 1
+L0 3 246
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/E-Yantra/mb_4683_task2a/t2a_dht/.test/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/E-Yantra/mb_4683_task2a/t2a_dht/.test|D:/E-Yantra/mb_4683_task2a/t2a_dht/.test/tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+D:/E-Yantra/mb_4683_task2a/t2a_dht/.test
+R7

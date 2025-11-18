@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 18 16:11:00 2025
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : t2c_maze_explorer
+Top-level Entity Name : t2c_maze_explorer
+Family : Cyclone IV E
+Total logic elements : 467
+    Total combinational functions : 464
+    Dedicated logic registers : 96
+Total registers : 96
+Total pins : 8
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

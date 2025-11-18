@@ -1,0 +1,1205 @@
+Timing Analyzer report for uart_tx
+Mon Nov 10 21:34:00 2025
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'clk_3125'
+ 13. Slow 1200mV 85C Model Hold: 'clk_3125'
+ 14. Slow 1200mV 85C Model Metastability Summary
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Slow 1200mV 0C Model Setup: 'clk_3125'
+ 22. Slow 1200mV 0C Model Hold: 'clk_3125'
+ 23. Slow 1200mV 0C Model Metastability Summary
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Fast 1200mV 0C Model Setup: 'clk_3125'
+ 30. Fast 1200mV 0C Model Hold: 'clk_3125'
+ 31. Fast 1200mV 0C Model Metastability Summary
+ 32. Multicorner Timing Analysis Summary
+ 33. Board Trace Model Assignments
+ 34. Input Transition Times
+ 35. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 36. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 37. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 38. Setup Transfers
+ 39. Hold Transfers
+ 40. Report TCCS
+ 41. Report RSKM
+ 42. Unconstrained Paths Summary
+ 43. Clock Status Summary
+ 44. Unconstrained Input Ports
+ 45. Unconstrained Output Ports
+ 46. Unconstrained Input Ports
+ 47. Unconstrained Output Ports
+ 48. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; uart_tx                                             ;
+; Device Family         ; Cyclone IV E                                        ;
+; Device Name           ; EP4CE22F17C6                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.04        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.4%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                               ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; clk_3125   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk_3125 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                        ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 380.52 MHz ; 250.0 MHz       ; clk_3125   ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++----------+--------+-----------------+
+; Clock    ; Slack  ; End Point TNS   ;
++----------+--------+-----------------+
+; clk_3125 ; -1.628 ; -23.343         ;
++----------+--------+-----------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++----------+-------+-----------------+
+; Clock    ; Slack ; End Point TNS   ;
++----------+-------+-----------------+
+; clk_3125 ; 0.344 ; 0.000           ;
++----------+-------+-----------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++----------+--------+-------------------------------+
+; Clock    ; Slack  ; End Point TNS                 ;
++----------+--------+-------------------------------+
+; clk_3125 ; -3.000 ; -27.000                       ;
++----------+--------+-------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'clk_3125'                                                                              ;
++--------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node         ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; -1.628 ; baud_counter[2]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.560      ;
+; -1.596 ; baud_counter[3]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.528      ;
+; -1.508 ; state.DATA        ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.403     ; 2.100      ;
+; -1.488 ; baud_counter[0]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.420      ;
+; -1.442 ; bit_count[2]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.375      ;
+; -1.419 ; bit_count[3]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.352      ;
+; -1.387 ; baud_counter[1]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.319      ;
+; -1.370 ; state.DATA        ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.402     ; 1.963      ;
+; -1.345 ; bit_count[1]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.277      ;
+; -1.335 ; state.START       ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.403     ; 1.927      ;
+; -1.326 ; baud_counter[2]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.259      ;
+; -1.301 ; baud_counter[3]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.234      ;
+; -1.282 ; bit_count[0]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.215      ;
+; -1.268 ; baud_counter[3]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.201      ;
+; -1.264 ; baud_counter[3]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.197      ;
+; -1.256 ; baud_counter[2]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.189      ;
+; -1.246 ; baud_counter[2]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.179      ;
+; -1.227 ; bit_count[2]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.160      ;
+; -1.208 ; baud_counter[2]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.140      ;
+; -1.206 ; state.DATA        ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.402     ; 1.799      ;
+; -1.204 ; state.PARITY_STOP ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.137      ;
+; -1.202 ; baud_counter[2]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.134      ;
+; -1.186 ; baud_counter[0]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.119      ;
+; -1.182 ; bit_count[1]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.114      ;
+; -1.180 ; bit_count[3]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.113      ;
+; -1.174 ; baud_counter[4]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.106      ;
+; -1.166 ; state.START       ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.402     ; 1.759      ;
+; -1.165 ; baud_counter[3]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.097      ;
+; -1.163 ; bit_count[0]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.096      ;
+; -1.162 ; baud_counter[3]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.094      ;
+; -1.146 ; bit_count[1]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.289      ; 2.430      ;
+; -1.142 ; bit_count[3]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.061     ; 2.076      ;
+; -1.140 ; bit_count[2]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.061     ; 2.074      ;
+; -1.125 ; baud_counter[3]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.057      ;
+; -1.116 ; baud_counter[0]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.049      ;
+; -1.106 ; baud_counter[0]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.039      ;
+; -1.104 ; state.DATA        ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.403     ; 1.696      ;
+; -1.101 ; state.DATA        ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.403     ; 1.693      ;
+; -1.101 ; bit_count[0]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.034      ;
+; -1.095 ; baud_counter[2]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.027      ;
+; -1.092 ; baud_counter[1]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 2.025      ;
+; -1.082 ; data_reg[1]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.289      ; 2.366      ;
+; -1.068 ; baud_counter[0]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 2.000      ;
+; -1.066 ; baud_counter[0]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.999      ;
+; -1.062 ; baud_counter[0]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 1.994      ;
+; -1.059 ; baud_counter[3]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.264      ; 2.318      ;
+; -1.059 ; baud_counter[1]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.992      ;
+; -1.055 ; baud_counter[1]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.988      ;
+; -1.043 ; baud_counter[2]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.264      ; 2.302      ;
+; -1.043 ; bit_count[1]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.976      ;
+; -1.042 ; bit_count[3]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.975      ;
+; -1.039 ; bit_count[3]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.972      ;
+; -1.033 ; state.START       ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.402     ; 1.626      ;
+; -1.022 ; bit_count[2]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.955      ;
+; -1.019 ; baud_counter[0]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.952      ;
+; -1.019 ; baud_counter[1]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.952      ;
+; -1.016 ; bit_count[2]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.949      ;
+; -1.006 ; bit_count[0]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.061     ; 1.940      ;
+; -1.001 ; baud_counter[1]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.934      ;
+; -0.993 ; state.DATA        ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.403     ; 1.585      ;
+; -0.979 ; bit_count[1]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 1.911      ;
+; -0.975 ; bit_count[0]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.290      ; 2.260      ;
+; -0.971 ; bit_count[2]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.290      ; 2.256      ;
+; -0.962 ; baud_counter[0]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 1.894      ;
+; -0.956 ; baud_counter[1]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 1.888      ;
+; -0.953 ; baud_counter[1]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 1.885      ;
+; -0.948 ; bit_count[3]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.290      ; 2.233      ;
+; -0.925 ; bit_count[1]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 1.857      ;
+; -0.918 ; baud_counter[2]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.851      ;
+; -0.918 ; baud_counter[0]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.851      ;
+; -0.916 ; baud_counter[1]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 1.848      ;
+; -0.915 ; state.START       ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.403     ; 1.507      ;
+; -0.909 ; bit_count[2]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.061     ; 1.843      ;
+; -0.909 ; state.START       ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.403     ; 1.501      ;
+; -0.905 ; bit_count[2]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.061     ; 1.839      ;
+; -0.903 ; baud_counter[0]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.264      ; 2.162      ;
+; -0.902 ; state.PARITY_STOP ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.061     ; 1.836      ;
+; -0.902 ; baud_counter[2]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.835      ;
+; -0.888 ; baud_counter[3]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.821      ;
+; -0.888 ; state.DATA        ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; -0.076     ; 1.807      ;
+; -0.886 ; baud_counter[1]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.819      ;
+; -0.886 ; bit_count[3]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.061     ; 1.820      ;
+; -0.882 ; bit_count[3]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.061     ; 1.816      ;
+; -0.881 ; bit_count[0]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.814      ;
+; -0.879 ; baud_counter[4]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.812      ;
+; -0.860 ; bit_count[3]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.265      ; 2.120      ;
+; -0.852 ; bit_count[2]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.265      ; 2.112      ;
+; -0.850 ; data_reg[2]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.289      ; 2.134      ;
+; -0.850 ; baud_counter[1]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.264      ; 2.109      ;
+; -0.849 ; baud_counter[4]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.063     ; 1.781      ;
+; -0.820 ; tx_done~reg0      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.753      ;
+; -0.812 ; bit_count[1]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.745      ;
+; -0.808 ; bit_count[1]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.741      ;
+; -0.807 ; bit_count[1]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.264      ; 2.066      ;
+; -0.803 ; baud_counter[0]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.736      ;
+; -0.788 ; bit_count[0]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.265      ; 2.048      ;
+; -0.784 ; state.PARITY_STOP ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.717      ;
+; -0.778 ; state.PARITY_STOP ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.062     ; 1.711      ;
+; -0.778 ; baud_counter[2]   ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.264      ; 2.037      ;
+; -0.766 ; baud_counter[3]   ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.264      ; 2.025      ;
++--------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'clk_3125'                                                                              ;
++-------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node         ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; 0.344 ; state.START       ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.076      ; 0.577      ;
+; 0.358 ; state.IDLE        ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.577      ;
+; 0.358 ; state.PARITY_STOP ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.577      ;
+; 0.358 ; bit_count[1]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.577      ;
+; 0.358 ; bit_count[3]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.577      ;
+; 0.358 ; bit_count[2]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.577      ;
+; 0.361 ; bit_count[0]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.580      ;
+; 0.361 ; baud_counter[4]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.580      ;
+; 0.394 ; state.IDLE        ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.427      ; 0.978      ;
+; 0.420 ; state.IDLE        ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.639      ;
+; 0.426 ; state.IDLE        ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.645      ;
+; 0.518 ; baud_counter[4]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.737      ;
+; 0.522 ; baud_counter[4]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.741      ;
+; 0.592 ; state.START       ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.076      ; 0.825      ;
+; 0.605 ; state.IDLE        ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.824      ;
+; 0.608 ; state.IDLE        ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.827      ;
+; 0.608 ; state.IDLE        ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.827      ;
+; 0.642 ; baud_counter[4]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.861      ;
+; 0.653 ; state.PARITY_STOP ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.872      ;
+; 0.665 ; baud_counter[4]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.224      ;
+; 0.679 ; data_reg[4]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.427      ; 1.263      ;
+; 0.713 ; state.PARITY_STOP ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.403      ; 1.273      ;
+; 0.732 ; baud_counter[1]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 0.951      ;
+; 0.766 ; bit_count[0]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.063      ; 0.986      ;
+; 0.790 ; data_reg[0]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.427      ; 1.374      ;
+; 0.819 ; state.DATA        ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.101      ; 1.077      ;
+; 0.849 ; state.IDLE        ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.408      ;
+; 0.853 ; baud_counter[2]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.072      ;
+; 0.853 ; baud_counter[1]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.412      ;
+; 0.861 ; baud_counter[0]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.080      ;
+; 0.867 ; state.PARITY_STOP ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.086      ;
+; 0.871 ; state.PARITY_STOP ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.090      ;
+; 0.889 ; bit_count[2]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.428      ; 1.474      ;
+; 0.896 ; baud_counter[4]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.455      ;
+; 0.909 ; data_reg[5]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.427      ; 1.493      ;
+; 0.920 ; baud_counter[3]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.139      ;
+; 0.927 ; bit_count[0]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.403      ; 1.487      ;
+; 0.957 ; baud_counter[1]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.176      ;
+; 0.958 ; baud_counter[3]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.177      ;
+; 0.958 ; baud_counter[1]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.177      ;
+; 0.971 ; data_reg[7]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.427      ; 1.555      ;
+; 0.971 ; baud_counter[2]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.190      ;
+; 0.972 ; parity_bit        ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.101      ; 1.230      ;
+; 0.974 ; baud_counter[0]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.533      ;
+; 0.988 ; bit_count[1]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.547      ;
+; 1.001 ; state.PARITY_STOP ; bit_count[1]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.063      ; 1.221      ;
+; 1.004 ; baud_counter[4]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.061      ; 1.222      ;
+; 1.005 ; bit_count[2]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.403      ; 1.565      ;
+; 1.007 ; state.PARITY_STOP ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.063      ; 1.227      ;
+; 1.007 ; state.PARITY_STOP ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.063      ; 1.227      ;
+; 1.026 ; bit_count[3]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.403      ; 1.586      ;
+; 1.031 ; bit_count[0]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.250      ;
+; 1.041 ; baud_counter[3]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.600      ;
+; 1.042 ; state.PARITY_STOP ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.428      ; 1.627      ;
+; 1.049 ; baud_counter[1]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.608      ;
+; 1.065 ; bit_count[0]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.284      ;
+; 1.078 ; state.DATA        ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.076      ; 1.311      ;
+; 1.083 ; data_reg[3]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.427      ; 1.667      ;
+; 1.084 ; baud_counter[2]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.643      ;
+; 1.089 ; baud_counter[0]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.308      ;
+; 1.091 ; baud_counter[0]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.310      ;
+; 1.100 ; bit_count[1]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.061      ; 1.318      ;
+; 1.126 ; baud_counter[1]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.345      ;
+; 1.127 ; baud_counter[3]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.346      ;
+; 1.131 ; bit_count[1]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.061      ; 1.349      ;
+; 1.142 ; baud_counter[2]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.361      ;
+; 1.143 ; baud_counter[0]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.362      ;
+; 1.144 ; bit_count[1]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.427      ; 1.728      ;
+; 1.146 ; baud_counter[3]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.365      ;
+; 1.174 ; baud_counter[0]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.733      ;
+; 1.179 ; data_reg[6]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.427      ; 1.763      ;
+; 1.192 ; baud_counter[1]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.061      ; 1.410      ;
+; 1.199 ; baud_counter[2]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.418      ;
+; 1.201 ; baud_counter[2]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.420      ;
+; 1.211 ; bit_count[3]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.430      ;
+; 1.220 ; bit_count[2]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.439      ;
+; 1.237 ; baud_counter[3]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.796      ;
+; 1.237 ; baud_counter[1]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.456      ;
+; 1.238 ; bit_count[0]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.403      ; 1.798      ;
+; 1.254 ; baud_counter[0]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.473      ;
+; 1.275 ; bit_count[0]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.428      ; 1.860      ;
+; 1.284 ; baud_counter[2]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.843      ;
+; 1.285 ; baud_counter[4]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.504      ;
+; 1.285 ; baud_counter[4]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.504      ;
+; 1.286 ; tx_done~reg0      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.505      ;
+; 1.288 ; data_reg[2]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.427      ; 1.872      ;
+; 1.299 ; bit_count[1]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.858      ;
+; 1.305 ; state.DATA        ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.076      ; 1.538      ;
+; 1.316 ; bit_count[2]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.403      ; 1.876      ;
+; 1.327 ; baud_counter[0]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.061      ; 1.545      ;
+; 1.332 ; baud_counter[4]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.061      ; 1.550      ;
+; 1.336 ; bit_count[0]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.063      ; 1.556      ;
+; 1.336 ; bit_count[0]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.063      ; 1.556      ;
+; 1.337 ; baud_counter[4]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.061      ; 1.555      ;
+; 1.358 ; bit_count[1]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.061      ; 1.576      ;
+; 1.375 ; bit_count[2]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.594      ;
+; 1.380 ; baud_counter[3]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.061      ; 1.598      ;
+; 1.383 ; bit_count[3]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.403      ; 1.943      ;
+; 1.386 ; state.IDLE        ; parity_bit        ; clk_3125     ; clk_3125    ; 0.000        ; 0.402      ; 1.945      ;
+; 1.386 ; bit_count[2]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.062      ; 1.605      ;
++-------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
+-----------------------------------------------
+; Slow 1200mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                         ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 421.76 MHz ; 250.0 MHz       ; clk_3125   ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++----------+--------+----------------+
+; Clock    ; Slack  ; End Point TNS  ;
++----------+--------+----------------+
+; clk_3125 ; -1.371 ; -18.436        ;
++----------+--------+----------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++----------+-------+----------------+
+; Clock    ; Slack ; End Point TNS  ;
++----------+-------+----------------+
+; clk_3125 ; 0.300 ; 0.000          ;
++----------+-------+----------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++----------+--------+------------------------------+
+; Clock    ; Slack  ; End Point TNS                ;
++----------+--------+------------------------------+
+; clk_3125 ; -3.000 ; -27.000                      ;
++----------+--------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'clk_3125'                                                                               ;
++--------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node         ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; -1.371 ; baud_counter[2]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 2.311      ;
+; -1.332 ; baud_counter[3]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 2.272      ;
+; -1.254 ; baud_counter[0]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 2.194      ;
+; -1.253 ; state.DATA        ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.889      ;
+; -1.203 ; bit_count[2]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 2.143      ;
+; -1.181 ; bit_count[3]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 2.121      ;
+; -1.147 ; baud_counter[1]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 2.087      ;
+; -1.116 ; bit_count[1]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 2.056      ;
+; -1.105 ; state.DATA        ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.741      ;
+; -1.095 ; state.START       ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.731      ;
+; -1.092 ; baud_counter[2]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 2.032      ;
+; -1.067 ; baud_counter[3]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 2.007      ;
+; -1.065 ; bit_count[0]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 2.005      ;
+; -1.036 ; baud_counter[2]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.976      ;
+; -1.035 ; baud_counter[2]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.975      ;
+; -1.021 ; baud_counter[3]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.961      ;
+; -1.009 ; baud_counter[3]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.949      ;
+; -0.984 ; baud_counter[2]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.924      ;
+; -0.980 ; state.PARITY_STOP ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.920      ;
+; -0.979 ; bit_count[2]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.919      ;
+; -0.979 ; baud_counter[2]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.919      ;
+; -0.975 ; baud_counter[0]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.915      ;
+; -0.974 ; state.DATA        ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.610      ;
+; -0.966 ; bit_count[3]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.906      ;
+; -0.956 ; baud_counter[4]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.896      ;
+; -0.937 ; baud_counter[3]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.877      ;
+; -0.935 ; bit_count[1]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.875      ;
+; -0.933 ; state.START       ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.569      ;
+; -0.933 ; baud_counter[3]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.873      ;
+; -0.925 ; bit_count[0]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.865      ;
+; -0.924 ; bit_count[2]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.864      ;
+; -0.919 ; baud_counter[0]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.859      ;
+; -0.918 ; baud_counter[0]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.858      ;
+; -0.915 ; bit_count[3]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.855      ;
+; -0.912 ; bit_count[1]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.260      ; 2.167      ;
+; -0.891 ; baud_counter[2]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.831      ;
+; -0.882 ; baud_counter[1]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.822      ;
+; -0.881 ; baud_counter[3]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.821      ;
+; -0.872 ; state.DATA        ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.508      ;
+; -0.868 ; state.DATA        ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.504      ;
+; -0.867 ; baud_counter[0]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.807      ;
+; -0.864 ; bit_count[0]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.804      ;
+; -0.862 ; baud_counter[0]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.802      ;
+; -0.841 ; data_reg[1]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.260      ; 2.096      ;
+; -0.837 ; bit_count[1]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.777      ;
+; -0.836 ; baud_counter[1]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.776      ;
+; -0.835 ; baud_counter[2]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.237      ; 2.067      ;
+; -0.830 ; baud_counter[0]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.770      ;
+; -0.829 ; baud_counter[3]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.237      ; 2.061      ;
+; -0.824 ; baud_counter[1]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.764      ;
+; -0.824 ; bit_count[3]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.764      ;
+; -0.820 ; bit_count[3]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.760      ;
+; -0.816 ; state.START       ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.452      ;
+; -0.816 ; bit_count[2]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.756      ;
+; -0.813 ; bit_count[0]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.753      ;
+; -0.811 ; bit_count[2]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.751      ;
+; -0.791 ; baud_counter[0]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.731      ;
+; -0.786 ; baud_counter[1]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.726      ;
+; -0.778 ; baud_counter[1]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.718      ;
+; -0.776 ; bit_count[2]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.260      ; 2.031      ;
+; -0.774 ; baud_counter[0]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.714      ;
+; -0.771 ; state.DATA        ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.407      ;
+; -0.768 ; bit_count[0]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.260      ; 2.023      ;
+; -0.759 ; bit_count[1]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.699      ;
+; -0.754 ; bit_count[3]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.260      ; 2.009      ;
+; -0.752 ; baud_counter[1]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.692      ;
+; -0.748 ; baud_counter[1]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.688      ;
+; -0.736 ; baud_counter[2]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.676      ;
+; -0.729 ; bit_count[1]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.669      ;
+; -0.718 ; baud_counter[0]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.237      ; 1.950      ;
+; -0.717 ; bit_count[2]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.657      ;
+; -0.708 ; state.START       ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.344      ;
+; -0.707 ; baud_counter[0]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.647      ;
+; -0.705 ; bit_count[2]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.645      ;
+; -0.703 ; state.START       ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.359     ; 1.339      ;
+; -0.701 ; state.PARITY_STOP ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.641      ;
+; -0.696 ; baud_counter[1]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.636      ;
+; -0.695 ; bit_count[3]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.635      ;
+; -0.691 ; baud_counter[4]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.631      ;
+; -0.691 ; baud_counter[2]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.631      ;
+; -0.687 ; bit_count[0]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.627      ;
+; -0.683 ; bit_count[3]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.623      ;
+; -0.681 ; baud_counter[3]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.621      ;
+; -0.679 ; baud_counter[1]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.619      ;
+; -0.678 ; bit_count[3]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.237      ; 1.910      ;
+; -0.678 ; state.DATA        ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; -0.067     ; 1.606      ;
+; -0.653 ; bit_count[2]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.237      ; 1.885      ;
+; -0.647 ; data_reg[2]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.260      ; 1.902      ;
+; -0.644 ; baud_counter[1]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.237      ; 1.876      ;
+; -0.631 ; baud_counter[4]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.571      ;
+; -0.630 ; bit_count[1]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.570      ;
+; -0.618 ; bit_count[1]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.558      ;
+; -0.614 ; tx_done~reg0      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.554      ;
+; -0.609 ; bit_count[1]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.237      ; 1.841      ;
+; -0.608 ; baud_counter[0]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.548      ;
+; -0.603 ; baud_counter[2]   ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.237      ; 1.835      ;
+; -0.599 ; bit_count[0]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.237      ; 1.831      ;
+; -0.593 ; state.PARITY_STOP ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.533      ;
+; -0.589 ; state.IDLE        ; parity_bit        ; clk_3125     ; clk_3125    ; 1.000        ; 0.237      ; 1.821      ;
+; -0.588 ; state.PARITY_STOP ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.055     ; 1.528      ;
++--------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'clk_3125'                                                                               ;
++-------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node         ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; 0.300 ; state.START       ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.067      ; 0.511      ;
+; 0.312 ; state.IDLE        ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; state.PARITY_STOP ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; bit_count[1]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; bit_count[3]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; bit_count[2]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.511      ;
+; 0.320 ; bit_count[0]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.519      ;
+; 0.320 ; baud_counter[4]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.519      ;
+; 0.367 ; state.IDLE        ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.383      ; 0.894      ;
+; 0.377 ; state.IDLE        ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.576      ;
+; 0.382 ; state.IDLE        ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.581      ;
+; 0.460 ; baud_counter[4]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.659      ;
+; 0.463 ; baud_counter[4]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.662      ;
+; 0.534 ; state.START       ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.067      ; 0.745      ;
+; 0.540 ; state.IDLE        ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.739      ;
+; 0.544 ; state.IDLE        ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.743      ;
+; 0.544 ; state.IDLE        ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.743      ;
+; 0.569 ; baud_counter[4]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.768      ;
+; 0.583 ; state.PARITY_STOP ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.782      ;
+; 0.609 ; data_reg[4]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.382      ; 1.135      ;
+; 0.611 ; baud_counter[4]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.114      ;
+; 0.643 ; state.PARITY_STOP ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.146      ;
+; 0.655 ; baud_counter[1]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.854      ;
+; 0.695 ; bit_count[0]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.894      ;
+; 0.708 ; data_reg[0]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.382      ; 1.234      ;
+; 0.743 ; state.DATA        ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.091      ; 0.978      ;
+; 0.762 ; state.IDLE        ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.265      ;
+; 0.771 ; baud_counter[2]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.970      ;
+; 0.771 ; baud_counter[0]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.970      ;
+; 0.779 ; state.PARITY_STOP ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.978      ;
+; 0.783 ; state.PARITY_STOP ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 0.982      ;
+; 0.787 ; baud_counter[1]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.290      ;
+; 0.810 ; bit_count[2]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.383      ; 1.337      ;
+; 0.814 ; baud_counter[4]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.317      ;
+; 0.817 ; data_reg[5]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.382      ; 1.343      ;
+; 0.823 ; baud_counter[3]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.022      ;
+; 0.834 ; bit_count[0]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.337      ;
+; 0.858 ; baud_counter[1]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.057      ;
+; 0.858 ; baud_counter[1]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.057      ;
+; 0.860 ; baud_counter[0]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.363      ;
+; 0.863 ; baud_counter[3]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.062      ;
+; 0.869 ; baud_counter[2]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.068      ;
+; 0.871 ; parity_bit        ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.091      ; 1.106      ;
+; 0.876 ; data_reg[7]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.382      ; 1.402      ;
+; 0.903 ; bit_count[1]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.406      ;
+; 0.907 ; baud_counter[4]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.106      ;
+; 0.907 ; bit_count[2]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.410      ;
+; 0.908 ; state.PARITY_STOP ; bit_count[1]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.107      ;
+; 0.913 ; state.PARITY_STOP ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.112      ;
+; 0.919 ; state.PARITY_STOP ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.118      ;
+; 0.925 ; bit_count[3]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.428      ;
+; 0.927 ; bit_count[0]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.126      ;
+; 0.945 ; bit_count[0]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.144      ;
+; 0.950 ; state.PARITY_STOP ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.383      ; 1.477      ;
+; 0.955 ; baud_counter[3]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.458      ;
+; 0.955 ; baud_counter[1]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.458      ;
+; 0.958 ; baud_counter[2]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.461      ;
+; 0.966 ; state.DATA        ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.067      ; 1.177      ;
+; 0.972 ; baud_counter[0]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.171      ;
+; 0.974 ; baud_counter[0]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.173      ;
+; 0.977 ; data_reg[3]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.382      ; 1.503      ;
+; 1.004 ; bit_count[1]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.203      ;
+; 1.016 ; baud_counter[1]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.215      ;
+; 1.016 ; baud_counter[3]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.215      ;
+; 1.019 ; bit_count[1]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.218      ;
+; 1.026 ; baud_counter[3]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.225      ;
+; 1.027 ; baud_counter[2]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.226      ;
+; 1.028 ; baud_counter[0]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.227      ;
+; 1.037 ; bit_count[1]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.383      ; 1.564      ;
+; 1.040 ; baud_counter[0]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.543      ;
+; 1.067 ; data_reg[6]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.382      ; 1.593      ;
+; 1.070 ; baud_counter[2]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.269      ;
+; 1.072 ; baud_counter[2]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.271      ;
+; 1.078 ; bit_count[3]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.277      ;
+; 1.083 ; baud_counter[1]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.282      ;
+; 1.088 ; bit_count[2]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.287      ;
+; 1.112 ; baud_counter[1]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.311      ;
+; 1.123 ; baud_counter[3]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.626      ;
+; 1.124 ; baud_counter[0]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.323      ;
+; 1.125 ; bit_count[0]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.628      ;
+; 1.138 ; baud_counter[2]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.641      ;
+; 1.144 ; bit_count[0]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.383      ; 1.671      ;
+; 1.165 ; data_reg[2]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.382      ; 1.691      ;
+; 1.166 ; baud_counter[4]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.365      ;
+; 1.172 ; baud_counter[4]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.371      ;
+; 1.179 ; baud_counter[0]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.378      ;
+; 1.180 ; tx_done~reg0      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.379      ;
+; 1.191 ; state.DATA        ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.067      ; 1.402      ;
+; 1.192 ; baud_counter[4]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.391      ;
+; 1.194 ; bit_count[1]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.697      ;
+; 1.198 ; baud_counter[4]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.397      ;
+; 1.198 ; bit_count[2]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.701      ;
+; 1.206 ; bit_count[0]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.405      ;
+; 1.212 ; bit_count[0]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.411      ;
+; 1.227 ; bit_count[1]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.426      ;
+; 1.231 ; bit_count[2]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.430      ;
+; 1.235 ; bit_count[3]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.359      ; 1.738      ;
+; 1.251 ; baud_counter[3]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.450      ;
+; 1.252 ; state.DATA        ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; -0.237     ; 1.159      ;
+; 1.256 ; bit_count[2]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.055      ; 1.455      ;
++-------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Slow 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++----------+--------+----------------+
+; Clock    ; Slack  ; End Point TNS  ;
++----------+--------+----------------+
+; clk_3125 ; -0.442 ; -2.898         ;
++----------+--------+----------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++----------+-------+----------------+
+; Clock    ; Slack ; End Point TNS  ;
++----------+-------+----------------+
+; clk_3125 ; 0.179 ; 0.000          ;
++----------+-------+----------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++----------+--------+------------------------------+
+; Clock    ; Slack  ; End Point TNS                ;
++----------+--------+------------------------------+
+; clk_3125 ; -3.000 ; -28.429                      ;
++----------+--------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'clk_3125'                                                                               ;
++--------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node         ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; -0.442 ; baud_counter[2]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.392      ;
+; -0.426 ; baud_counter[3]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.376      ;
+; -0.378 ; state.DATA        ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.221     ; 1.144      ;
+; -0.354 ; baud_counter[0]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.304      ;
+; -0.346 ; bit_count[2]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.296      ;
+; -0.337 ; state.DATA        ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.220     ; 1.104      ;
+; -0.328 ; bit_count[3]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.278      ;
+; -0.311 ; baud_counter[1]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.261      ;
+; -0.293 ; baud_counter[2]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.244      ;
+; -0.292 ; state.START       ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.221     ; 1.058      ;
+; -0.291 ; bit_count[1]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.241      ;
+; -0.278 ; baud_counter[3]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.229      ;
+; -0.277 ; baud_counter[3]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.228      ;
+; -0.262 ; baud_counter[3]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.213      ;
+; -0.248 ; bit_count[2]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.198      ;
+; -0.245 ; baud_counter[2]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.196      ;
+; -0.244 ; bit_count[0]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.194      ;
+; -0.244 ; baud_counter[2]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.195      ;
+; -0.237 ; state.DATA        ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.220     ; 1.004      ;
+; -0.227 ; bit_count[1]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.177      ;
+; -0.223 ; baud_counter[2]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.173      ;
+; -0.218 ; state.PARITY_STOP ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.168      ;
+; -0.217 ; state.START       ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.220     ; 0.984      ;
+; -0.216 ; baud_counter[2]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.166      ;
+; -0.216 ; bit_count[3]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.166      ;
+; -0.210 ; bit_count[0]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.160      ;
+; -0.208 ; bit_count[1]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.154      ; 1.349      ;
+; -0.207 ; bit_count[3]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.158      ;
+; -0.205 ; baud_counter[0]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.156      ;
+; -0.198 ; baud_counter[3]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.148      ;
+; -0.197 ; bit_count[2]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.148      ;
+; -0.195 ; bit_count[0]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.145      ;
+; -0.192 ; baud_counter[3]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.142      ;
+; -0.192 ; baud_counter[3]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.142      ;
+; -0.191 ; baud_counter[4]   ; bit_count[0]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.141      ;
+; -0.183 ; baud_counter[0]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.134      ;
+; -0.182 ; baud_counter[0]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.133      ;
+; -0.182 ; data_reg[1]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.154      ; 1.323      ;
+; -0.176 ; state.DATA        ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.221     ; 0.942      ;
+; -0.173 ; state.DATA        ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.221     ; 0.939      ;
+; -0.167 ; baud_counter[3]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.140      ; 1.294      ;
+; -0.163 ; baud_counter[1]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.114      ;
+; -0.162 ; baud_counter[1]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.113      ;
+; -0.159 ; baud_counter[2]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.109      ;
+; -0.147 ; baud_counter[1]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.098      ;
+; -0.146 ; bit_count[3]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.096      ;
+; -0.143 ; state.START       ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.220     ; 0.910      ;
+; -0.143 ; bit_count[3]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.093      ;
+; -0.142 ; bit_count[1]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.093      ;
+; -0.140 ; baud_counter[0]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.091      ;
+; -0.135 ; baud_counter[0]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.085      ;
+; -0.134 ; baud_counter[2]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.140      ; 1.261      ;
+; -0.129 ; baud_counter[1]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.080      ;
+; -0.128 ; baud_counter[0]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.078      ;
+; -0.127 ; bit_count[2]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.077      ;
+; -0.124 ; bit_count[1]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.074      ;
+; -0.120 ; baud_counter[1]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.071      ;
+; -0.120 ; bit_count[2]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.070      ;
+; -0.113 ; state.DATA        ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.221     ; 0.879      ;
+; -0.113 ; bit_count[0]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.154      ; 1.254      ;
+; -0.113 ; baud_counter[0]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.064      ;
+; -0.100 ; bit_count[2]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.154      ; 1.241      ;
+; -0.100 ; bit_count[0]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.051      ;
+; -0.097 ; baud_counter[0]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.047      ;
+; -0.083 ; baud_counter[1]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.033      ;
+; -0.082 ; bit_count[3]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.154      ; 1.223      ;
+; -0.077 ; baud_counter[1]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.027      ;
+; -0.077 ; baud_counter[1]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.027      ;
+; -0.075 ; bit_count[2]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.026      ;
+; -0.074 ; bit_count[2]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.025      ;
+; -0.073 ; state.START       ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.221     ; 0.839      ;
+; -0.072 ; baud_counter[0]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.140      ; 1.199      ;
+; -0.072 ; bit_count[1]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 1.022      ;
+; -0.072 ; baud_counter[0]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.023      ;
+; -0.069 ; state.PARITY_STOP ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.020      ;
+; -0.066 ; state.START       ; bit_count[3]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.221     ; 0.832      ;
+; -0.061 ; state.DATA        ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; -0.044     ; 1.004      ;
+; -0.060 ; baud_counter[3]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.011      ;
+; -0.057 ; bit_count[3]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.008      ;
+; -0.056 ; bit_count[3]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.007      ;
+; -0.053 ; baud_counter[1]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.004      ;
+; -0.053 ; baud_counter[2]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 1.004      ;
+; -0.052 ; baud_counter[1]   ; state.DATA        ; clk_3125     ; clk_3125    ; 1.000        ; 0.140      ; 1.179      ;
+; -0.047 ; baud_counter[2]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 0.998      ;
+; -0.045 ; bit_count[2]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.140      ; 1.172      ;
+; -0.044 ; baud_counter[4]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 0.994      ;
+; -0.039 ; bit_count[0]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 0.989      ;
+; -0.033 ; data_reg[2]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 1.000        ; 0.154      ; 1.174      ;
+; -0.030 ; tx_done~reg0      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 0.981      ;
+; -0.027 ; baud_counter[4]   ; bit_count[1]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 0.978      ;
+; -0.024 ; bit_count[1]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.140      ; 1.151      ;
+; -0.022 ; bit_count[3]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.140      ; 1.149      ;
+; -0.020 ; bit_count[1]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 0.971      ;
+; -0.019 ; bit_count[1]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 0.970      ;
+; -0.007 ; bit_count[0]      ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.140      ; 1.134      ;
+; -0.005 ; baud_counter[0]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 0.956      ;
+; 0.001  ; state.PARITY_STOP ; bit_count[2]      ; clk_3125     ; clk_3125    ; 1.000        ; -0.037     ; 0.949      ;
+; 0.002  ; baud_counter[3]   ; state.START       ; clk_3125     ; clk_3125    ; 1.000        ; 0.140      ; 1.125      ;
+; 0.005  ; baud_counter[4]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 0.946      ;
+; 0.006  ; baud_counter[4]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 1.000        ; -0.036     ; 0.945      ;
++--------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'clk_3125'                                                                               ;
++-------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node         ; To Node           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+; 0.179 ; state.START       ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.044      ; 0.307      ;
+; 0.186 ; state.PARITY_STOP ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; bit_count[3]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; bit_count[2]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.307      ;
+; 0.187 ; state.IDLE        ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; bit_count[1]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.307      ;
+; 0.193 ; bit_count[0]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.314      ;
+; 0.194 ; baud_counter[4]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.314      ;
+; 0.199 ; state.IDLE        ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.234      ; 0.517      ;
+; 0.220 ; state.IDLE        ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.340      ;
+; 0.225 ; state.IDLE        ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.345      ;
+; 0.283 ; baud_counter[4]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.403      ;
+; 0.284 ; baud_counter[4]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.404      ;
+; 0.317 ; state.START       ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.044      ; 0.445      ;
+; 0.322 ; state.IDLE        ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.442      ;
+; 0.329 ; state.IDLE        ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.449      ;
+; 0.330 ; state.IDLE        ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.450      ;
+; 0.342 ; baud_counter[4]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.646      ;
+; 0.347 ; baud_counter[4]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.467      ;
+; 0.355 ; data_reg[4]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.234      ; 0.673      ;
+; 0.356 ; state.PARITY_STOP ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.477      ;
+; 0.382 ; state.PARITY_STOP ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.221      ; 0.687      ;
+; 0.395 ; baud_counter[1]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.515      ;
+; 0.409 ; bit_count[0]      ; bit_count[1]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.530      ;
+; 0.418 ; data_reg[0]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.234      ; 0.736      ;
+; 0.428 ; state.DATA        ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.058      ; 0.570      ;
+; 0.442 ; baud_counter[1]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.746      ;
+; 0.454 ; baud_counter[2]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.574      ;
+; 0.463 ; state.PARITY_STOP ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.584      ;
+; 0.468 ; bit_count[2]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.235      ; 0.787      ;
+; 0.469 ; state.PARITY_STOP ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.590      ;
+; 0.470 ; baud_counter[0]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.590      ;
+; 0.472 ; baud_counter[4]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.776      ;
+; 0.480 ; state.IDLE        ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.784      ;
+; 0.484 ; data_reg[5]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.234      ; 0.802      ;
+; 0.500 ; baud_counter[3]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.620      ;
+; 0.503 ; bit_count[0]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.221      ; 0.808      ;
+; 0.508 ; data_reg[7]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.234      ; 0.826      ;
+; 0.511 ; baud_counter[3]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.631      ;
+; 0.513 ; baud_counter[1]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.633      ;
+; 0.514 ; parity_bit        ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.057      ; 0.655      ;
+; 0.517 ; baud_counter[1]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.637      ;
+; 0.525 ; bit_count[1]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.829      ;
+; 0.529 ; baud_counter[2]   ; baud_counter[1]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.649      ;
+; 0.531 ; state.PARITY_STOP ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.652      ;
+; 0.531 ; baud_counter[0]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.835      ;
+; 0.532 ; state.PARITY_STOP ; bit_count[1]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.653      ;
+; 0.532 ; baud_counter[4]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.652      ;
+; 0.537 ; state.PARITY_STOP ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.658      ;
+; 0.544 ; bit_count[2]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.221      ; 0.849      ;
+; 0.547 ; baud_counter[3]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.851      ;
+; 0.548 ; state.PARITY_STOP ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.235      ; 0.867      ;
+; 0.551 ; baud_counter[1]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.855      ;
+; 0.552 ; bit_count[3]      ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.221      ; 0.857      ;
+; 0.554 ; bit_count[0]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.675      ;
+; 0.572 ; data_reg[3]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.234      ; 0.890      ;
+; 0.580 ; state.DATA        ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.044      ; 0.708      ;
+; 0.583 ; bit_count[1]      ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.703      ;
+; 0.584 ; bit_count[0]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.705      ;
+; 0.601 ; baud_counter[1]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.721      ;
+; 0.602 ; baud_counter[3]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.722      ;
+; 0.602 ; baud_counter[0]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.722      ;
+; 0.603 ; baud_counter[2]   ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.907      ;
+; 0.606 ; bit_count[1]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.234      ; 0.924      ;
+; 0.606 ; baud_counter[0]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.726      ;
+; 0.614 ; baud_counter[0]   ; baud_counter[2]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.734      ;
+; 0.615 ; baud_counter[2]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.735      ;
+; 0.617 ; bit_count[1]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.737      ;
+; 0.622 ; data_reg[6]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.234      ; 0.940      ;
+; 0.622 ; baud_counter[3]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.742      ;
+; 0.632 ; baud_counter[1]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.752      ;
+; 0.640 ; baud_counter[0]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.944      ;
+; 0.656 ; baud_counter[3]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.960      ;
+; 0.658 ; bit_count[0]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.221      ; 0.963      ;
+; 0.660 ; bit_count[3]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.781      ;
+; 0.662 ; baud_counter[1]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.782      ;
+; 0.663 ; baud_counter[2]   ; baud_counter[3]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.783      ;
+; 0.667 ; baud_counter[2]   ; baud_counter[0]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.787      ;
+; 0.668 ; bit_count[2]      ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.789      ;
+; 0.672 ; tx_done~reg0      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.792      ;
+; 0.677 ; baud_counter[4]   ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.797      ;
+; 0.680 ; bit_count[1]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 0.984      ;
+; 0.680 ; baud_counter[0]   ; baud_counter[4]   ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.800      ;
+; 0.683 ; baud_counter[4]   ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.803      ;
+; 0.685 ; data_reg[2]       ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.234      ; 1.003      ;
+; 0.687 ; state.DATA        ; state.DATA        ; clk_3125     ; clk_3125    ; 0.000        ; 0.044      ; 0.815      ;
+; 0.693 ; bit_count[0]      ; tx~reg0           ; clk_3125     ; clk_3125    ; 0.000        ; 0.235      ; 1.012      ;
+; 0.699 ; bit_count[2]      ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.221      ; 1.004      ;
+; 0.713 ; baud_counter[2]   ; state.START       ; clk_3125     ; clk_3125    ; 0.000        ; 0.220      ; 1.017      ;
+; 0.714 ; bit_count[0]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.835      ;
+; 0.716 ; baud_counter[4]   ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.836      ;
+; 0.720 ; bit_count[0]      ; state.IDLE        ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.841      ;
+; 0.721 ; baud_counter[0]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.841      ;
+; 0.723 ; bit_count[2]      ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.037      ; 0.844      ;
+; 0.723 ; baud_counter[4]   ; bit_count[2]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.843      ;
+; 0.734 ; bit_count[1]      ; bit_count[0]      ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.854      ;
+; 0.737 ; baud_counter[3]   ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.857      ;
+; 0.747 ; bit_count[1]      ; tx_done~reg0      ; clk_3125     ; clk_3125    ; 0.000        ; 0.036      ; 0.867      ;
+; 0.751 ; state.DATA        ; state.PARITY_STOP ; clk_3125     ; clk_3125    ; 0.000        ; -0.140     ; 0.695      ;
+; 0.753 ; state.START       ; bit_count[3]      ; clk_3125     ; clk_3125    ; 0.000        ; -0.140     ; 0.697      ;
++-------+-------------------+-------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Fast 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -1.628  ; 0.179 ; N/A      ; N/A     ; -3.000              ;
+;  clk_3125        ; -1.628  ; 0.179 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -23.343 ; 0.0   ; 0.0      ; 0.0     ; -28.429             ;
+;  clk_3125        ; -23.343 ; 0.000 ; N/A      ; N/A     ; -28.429             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; tx            ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; tx_done       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; clk_3125                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; tx_start                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[1]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[0]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[2]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[3]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[7]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; parity_type             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[5]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[6]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[4]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; tx            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.38 V              ; -0.0145 V           ; 0.169 V                              ; 0.026 V                              ; 4.83e-10 s                  ; 4.71e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.38 V             ; -0.0145 V          ; 0.169 V                             ; 0.026 V                             ; 4.83e-10 s                 ; 4.71e-10 s                 ; Yes                       ; Yes                       ;
+; tx_done       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.38 V              ; -0.0145 V           ; 0.169 V                              ; 0.026 V                              ; 4.83e-10 s                  ; 4.71e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.38 V             ; -0.0145 V          ; 0.169 V                             ; 0.026 V                             ; 4.83e-10 s                 ; 4.71e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.45e-09 V                   ; 2.38 V              ; -0.0609 V           ; 0.148 V                              ; 0.095 V                              ; 2.82e-10 s                  ; 2.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.45e-09 V                  ; 2.38 V             ; -0.0609 V          ; 0.148 V                             ; 0.095 V                             ; 2.82e-10 s                 ; 2.59e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.61e-09 V                   ; 2.38 V              ; -0.00274 V          ; 0.141 V                              ; 0.006 V                              ; 4.7e-10 s                   ; 6.02e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.61e-09 V                  ; 2.38 V             ; -0.00274 V         ; 0.141 V                             ; 0.006 V                             ; 4.7e-10 s                  ; 6.02e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; tx            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.35 V              ; -0.00832 V          ; 0.101 V                              ; 0.024 V                              ; 6.39e-10 s                  ; 6e-10 s                     ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.35 V             ; -0.00832 V         ; 0.101 V                             ; 0.024 V                             ; 6.39e-10 s                 ; 6e-10 s                    ; Yes                       ; Yes                       ;
+; tx_done       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.35 V              ; -0.00832 V          ; 0.101 V                              ; 0.024 V                              ; 6.39e-10 s                  ; 6e-10 s                     ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.35 V             ; -0.00832 V         ; 0.101 V                             ; 0.024 V                             ; 6.39e-10 s                 ; 6e-10 s                    ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.74e-07 V                   ; 2.36 V              ; -0.0201 V           ; 0.072 V                              ; 0.033 V                              ; 4.04e-10 s                  ; 3.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.74e-07 V                  ; 2.36 V             ; -0.0201 V          ; 0.072 V                             ; 0.033 V                             ; 4.04e-10 s                 ; 3.29e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.45e-07 V                   ; 2.35 V              ; -0.00643 V          ; 0.081 V                              ; 0.031 V                              ; 5.31e-10 s                  ; 7.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.45e-07 V                  ; 2.35 V             ; -0.00643 V         ; 0.081 V                             ; 0.031 V                             ; 5.31e-10 s                 ; 7.59e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; tx            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; tx_done       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk_3125   ; clk_3125 ; 252      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk_3125   ; clk_3125 ; 252      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 28    ; 28   ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 2     ; 2    ;
++---------------------------------+-------+------+
+
+
++------------------------------------------+
+; Clock Status Summary                     ;
++----------+----------+------+-------------+
+; Target   ; Clock    ; Type ; Status      ;
++----------+----------+------+-------------+
+; clk_3125 ; clk_3125 ; Base ; Constrained ;
++----------+----------+------+-------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                          ;
++-------------+--------------------------------------------------------------------------------------+
+; Input Port  ; Comment                                                                              ;
++-------------+--------------------------------------------------------------------------------------+
+; data[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[3]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[4]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[5]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[6]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[7]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; parity_type ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; tx_start    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; tx          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; tx_done     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                          ;
++-------------+--------------------------------------------------------------------------------------+
+; Input Port  ; Comment                                                                              ;
++-------------+--------------------------------------------------------------------------------------+
+; data[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[3]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[4]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[5]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[6]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; data[7]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; parity_type ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; tx_start    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; tx          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; tx_done     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Mon Nov 10 21:33:59 2025
+Info: Command: quartus_sta uart_tx -c uart_tx
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'uart_tx.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk_3125 clk_3125
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.628
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.628             -23.343 clk_3125 
+Info (332146): Worst-case hold slack is 0.344
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.344               0.000 clk_3125 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -27.000 clk_3125 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.371
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.371             -18.436 clk_3125 
+Info (332146): Worst-case hold slack is 0.300
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.300               0.000 clk_3125 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -27.000 clk_3125 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.442
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.442              -2.898 clk_3125 
+Info (332146): Worst-case hold slack is 0.179
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.179               0.000 clk_3125 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -28.429 clk_3125 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4866 megabytes
+    Info: Processing ended: Mon Nov 10 21:34:00 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

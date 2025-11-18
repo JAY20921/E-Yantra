@@ -1,0 +1,11 @@
+
+State Machine - |t2a_dht|fsm_state
+Name fsm_state.ST_OUTPUT fsm_state.ST_CHECKSUM fsm_state.ST_BIT_HIGH fsm_state.ST_BIT_LOW fsm_state.ST_RESP_HIGH fsm_state.ST_RESP_LOW fsm_state.ST_START_HIGH fsm_state.ST_START_LOW 
+fsm_state.ST_START_LOW 0 0 0 0 0 0 0 0 
+fsm_state.ST_START_HIGH 0 0 0 0 0 0 1 1 
+fsm_state.ST_RESP_LOW 0 0 0 0 0 1 0 1 
+fsm_state.ST_RESP_HIGH 0 0 0 0 1 0 0 1 
+fsm_state.ST_BIT_LOW 0 0 0 1 0 0 0 1 
+fsm_state.ST_BIT_HIGH 0 0 1 0 0 0 0 1 
+fsm_state.ST_CHECKSUM 0 1 0 0 0 0 0 1 
+fsm_state.ST_OUTPUT 1 0 0 0 0 0 0 1 

@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# do uart_rx_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying D:/Intel/modelsim_ase/win32aloem/modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/t2b_uart/uart_rx/code {D:/t2b_uart/uart_rx/code/uart_rx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:02:03 on Nov 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/t2b_uart/uart_rx/code" D:/t2b_uart/uart_rx/code/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 18:02:03 on Nov 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/t2b_uart/uart_rx/.test {D:/t2b_uart/uart_rx/.test/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:02:03 on Nov 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/t2b_uart/uart_rx/.test" D:/t2b_uart/uart_rx/.test/tb.v 
+# -- Compiling module tb
+# ** Warning: D:/t2b_uart/uart_rx/.test/tb.v(45): (vlog-2609) indexed range expression contains whitespace between '+' and ':'.
+# 
+# Top level modules:
+# 	tb
+# End time: 18:02:03 on Nov 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 18:02:03 on Nov 10,2025
+# Loading work.tb
+# Loading work.uart_rx
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fgets'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: D:/t2b_uart/uart_rx/.test/tb.v Line: 31
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 us
+# rx_msg: e,exp_msg:e,rx_parity:0,exp_parity:0
+# rx_msg: ?,exp_msg:?,rx_parity:1,exp_parity:0
+# rx_msg: Y,exp_msg:Y,rx_parity:0,exp_parity:0
+# rx_msg: a,exp_msg:a,rx_parity:1,exp_parity:1
+# rx_msg: n,exp_msg:n,rx_parity:1,exp_parity:1
+# rx_msg: t,exp_msg:t,rx_parity:0,exp_parity:0
+# rx_msg: r,exp_msg:r,rx_parity:0,exp_parity:0
+# rx_msg: a,exp_msg:a,rx_parity:1,exp_parity:1
+# No errors encountered, congratulations!
+# rx_msg: ,exp_msg:,rx_parity:0,exp_parity:0
+# No errors encountered, congratulations!
+# End time: 18:02:22 on Nov 10,2025, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 1

@@ -1,0 +1,48 @@
+# Reading pref.tcl
+# do t2a_dht_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying D:/Intel/modelsim_ase/win32aloem/modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/E-Yantra/mb_4683_task2a/t2a_dht/code {D:/E-Yantra/mb_4683_task2a/t2a_dht/code/t2a_dht.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:54:33 on Oct 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/E-Yantra/mb_4683_task2a/t2a_dht/code" D:/E-Yantra/mb_4683_task2a/t2a_dht/code/t2a_dht.v 
+# -- Compiling module t2a_dht
+# 
+# Top level modules:
+# 	t2a_dht
+# End time: 01:54:33 on Oct 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/E-Yantra/mb_4683_task2a/t2a_dht/.test {D:/E-Yantra/mb_4683_task2a/t2a_dht/.test/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:54:33 on Oct 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/E-Yantra/mb_4683_task2a/t2a_dht/.test" D:/E-Yantra/mb_4683_task2a/t2a_dht/.test/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 01:54:33 on Oct 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 01:54:33 on Oct 30,2025
+# Loading work.tb
+# Loading work.t2a_dht
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 75 ms
+# No errors encountered, congratulations!
+# End time: 01:55:03 on Oct 30,2025, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0

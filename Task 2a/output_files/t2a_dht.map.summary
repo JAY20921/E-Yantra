@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Oct 30 01:53:52 2025
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : t2a_dht
+Top-level Entity Name : t2a_dht
+Family : Cyclone IV E
+Total logic elements : 313
+    Total combinational functions : 313
+    Dedicated logic registers : 130
+Total registers : 130
+Total pins : 44
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
